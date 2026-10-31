@@ -1,0 +1,499 @@
+{
+ "head": {
+  "plain": {
+   "tif_files": [
+    "00.tif",
+    "01.tif",
+    "02.tif",
+    "03.tif",
+    "04.tif"
+   ],
+   "zarr_L0_depth": 5,
+   "shape": [
+    500,
+    700
+   ],
+   "distinct_tif_slices": 5,
+   "tif_equals_zarr_L0": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  "rot90": {
+   "tif": [
+    {
+     "z": 0,
+     "match": true,
+     "equals_plain_slices": [
+      0
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 1,
+     "match": true,
+     "equals_plain_slices": [
+      1
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 2,
+     "match": true,
+     "equals_plain_slices": [
+      2
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 3,
+     "match": true,
+     "equals_plain_slices": [
+      3
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 4,
+     "match": true,
+     "equals_plain_slices": [
+      4
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    }
+   ],
+   "zarr": [
+    {
+     "z": 0,
+     "match": true,
+     "equals_plain_slices": [
+      0
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 1,
+     "match": true,
+     "equals_plain_slices": [
+      1
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 2,
+     "match": true,
+     "equals_plain_slices": [
+      2
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 3,
+     "match": true,
+     "equals_plain_slices": [
+      3
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    },
+    {
+     "z": 4,
+     "match": true,
+     "equals_plain_slices": [
+      4
+     ],
+     "shape": [
+      700,
+      500
+     ]
+    }
+   ]
+  },
+  "flip0": {
+   "tif": [
+    {
+     "z": 0,
+     "match": true,
+     "equals_plain_slices": [
+      0
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 1,
+     "match": true,
+     "equals_plain_slices": [
+      1
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 2,
+     "match": true,
+     "equals_plain_slices": [
+      2
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 3,
+     "match": true,
+     "equals_plain_slices": [
+      3
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 4,
+     "match": true,
+     "equals_plain_slices": [
+      4
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    }
+   ],
+   "zarr": [
+    {
+     "z": 0,
+     "match": true,
+     "equals_plain_slices": [
+      0
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 1,
+     "match": true,
+     "equals_plain_slices": [
+      1
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 2,
+     "match": true,
+     "equals_plain_slices": [
+      2
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 3,
+     "match": true,
+     "equals_plain_slices": [
+      3
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    },
+    {
+     "z": 4,
+     "match": true,
+     "equals_plain_slices": [
+      4
+     ],
+     "shape": [
+      500,
+      700
+     ]
+    }
+   ]
+  }
+ },
+ "base": {
+  "plain": {
+   "tif_files": [
+    "00.tif",
+    "01.tif",
+    "02.tif",
+    "03.tif",
+    "04.tif"
+   ],
+   "zarr_L0_depth": 5,
+   "shape": [
+    500,
+    700
+   ],
+   "distinct_tif_slices": 5,
+   "tif_equals_zarr_L0": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  "rot90": {
+   "tif": [
+    {
+     "z": 0,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308593
+    },
+    {
+     "z": 1,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308593
+    },
+    {
+     "z": 2,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308583
+    },
+    {
+     "z": 3,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308575
+    },
+    {
+     "z": 4,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308577
+    }
+   ],
+   "zarr": [
+    {
+     "z": 0,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 309536
+    },
+    {
+     "z": 1,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 310324
+    },
+    {
+     "z": 2,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 309408
+    },
+    {
+     "z": 3,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308055
+    },
+    {
+     "z": 4,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      700,
+      500
+     ],
+     "n_diff": 308941
+    }
+   ]
+  },
+  "flip0": {
+   "tif": [
+    {
+     "z": 0,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 330285
+    },
+    {
+     "z": 1,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 331406
+    },
+    {
+     "z": 2,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 331249
+    },
+    {
+     "z": 3,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 329891
+    },
+    {
+     "z": 4,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 330808
+    }
+   ],
+   "zarr": [
+    {
+     "z": 0,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 235468
+    },
+    {
+     "z": 1,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 236842
+    },
+    {
+     "z": 2,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 237253
+    },
+    {
+     "z": 3,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 236461
+    },
+    {
+     "z": 4,
+     "match": false,
+     "equals_plain_slices": [],
+     "shape": [
+      500,
+      700
+     ],
+     "n_diff": 236943
+    }
+   ]
+  }
+ },
+ "plain_head_vs_base": {
+  "files": 48,
+  "equal": true,
+  "differ": []
+ }
+}

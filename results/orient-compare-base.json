@@ -1,0 +1,231 @@
+{
+ "tif": {
+  "base_shape": [
+   500,
+   700
+  ],
+  "base_dtype": "uint8",
+  "rot90": {
+   "rot90 ccw (np.rot90 k=1)": {
+    "n_diff": 308583,
+    "frac": 0.881666,
+    "rows": [
+     0,
+     699
+    ],
+    "cols": [
+     0,
+     499
+    ]
+   },
+   "rot90 cw (np.rot90 k=-1)": {
+    "n_diff": 308502,
+    "frac": 0.881434,
+    "rows": [
+     0,
+     699
+    ],
+    "cols": [
+     0,
+     499
+    ]
+   },
+   "matches": [],
+   "shape": [
+    700,
+    500
+   ]
+  },
+  "rot180": {
+   "np.rot90 k=2": {
+    "n_diff": 331249,
+    "frac": 0.946426,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip0": {
+   "np.flip axis 0 (vertical)": {
+    "n_diff": 331249,
+    "frac": 0.946426,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "np.flip axis 1": {
+    "n_diff": 340694,
+    "frac": 0.973411,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip1": {
+   "np.flip axis 1 (horizontal)": true,
+   "np.flip axis 0": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [
+    "np.flip axis 1 (horizontal)"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  }
+ },
+ "zarr": {
+  "base_shape": [
+   500,
+   700
+  ],
+  "base_dtype": "uint8",
+  "rot90": {
+   "rot90 ccw (np.rot90 k=1)": {
+    "n_diff": 309408,
+    "frac": 0.884023,
+    "rows": [
+     60,
+     699
+    ],
+    "cols": [
+     0,
+     499
+    ]
+   },
+   "rot90 cw (np.rot90 k=-1)": {
+    "n_diff": 341147,
+    "frac": 0.974706,
+    "rows": [
+     0,
+     699
+    ],
+    "cols": [
+     0,
+     499
+    ]
+   },
+   "matches": [],
+   "shape": [
+    700,
+    500
+   ]
+  },
+  "rot180": {
+   "np.rot90 k=2": {
+    "n_diff": 330966,
+    "frac": 0.945617,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip0": {
+   "np.flip axis 0 (vertical)": {
+    "n_diff": 237253,
+    "frac": 0.677866,
+    "rows": [
+     116,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "np.flip axis 1": {
+    "n_diff": 342597,
+    "frac": 0.978849,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip1": {
+   "np.flip axis 1 (horizontal)": {
+    "n_diff": 309408,
+    "frac": 0.884023,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     60,
+     699
+    ]
+   },
+   "np.flip axis 0": {
+    "n_diff": 341147,
+    "frac": 0.974706,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [],
+   "shape": [
+    500,
+    700
+   ]
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "runs": [
+  "/w/r4/out/rd/full-base/o-base",
+  "/w/r4/out/rd/fulltile-base/o-base",
+  "/w/r4/out/rd/full-base/o-rot90"
+ ],
+ "band_vs_tile_unrotated": {
+  "n_diff": 233,
+  "max_abs": 1,
+  "shape": [
+   905,
+   1305
+  ]
+ },
+ "rot90_tifonly_vs_rot90(tile)": {
+  "n_diff": 624056,
+  "max_abs": 247,
+  "shape": [
+   1305,
+   905
+  ]
+ },
+ "rot90_tifonly_vs_rot90(band)": {
+  "n_diff": 624056,
+  "max_abs": 247,
+  "shape": [
+   1305,
+   905
+  ]
+ }
+}

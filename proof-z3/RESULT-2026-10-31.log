@@ -1,0 +1,11 @@
+g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+699f95e3c1991ddf27c437b16301123831cbbc4dbffe0e325a96e5b1351e95f8  vc/core/util/RotateFlip.hpp
+OpenCV C++ 4.10.0: compiling against the real headers
+pixel_check: OpenCV 4.10.0, sizes 1..8, 288000 rects, 0 failures: PASS
+A  OpenCV model == cv2 4.10.0: 18816 pixel checks, sizes 1..7 x 1..7, all rotate/flip values: PASS
+B  transcription == compiled RotateFlip.hpp: 1280 rotatedSize and 288000 srcRectForDst results: PASS
+C  z3 4.15.4: claims 1-5 hold for all 1 <= W, H <= INT_MAX, all 20 rotate/flip pairs (negation UNSAT each): PROVED
+C  sabotage 'ccw-uses-height' (rot=1 flip=-1): SAT as expected, counterexample {'W': 2147483647, 'H': 2147483646, 'dx': 2147483644, 'dy': 0, 'dw': 2, 'dh': 2147483647, 'u': 0, 'v': 0}
+C  sabotage 'flip-uses-src-size' (rot=1 flip=0): SAT as expected, counterexample {'W': 2147483646, 'H': 2147483647, 'dx': 2147483645, 'dy': 0, 'dw': 2, 'dh': 2147483646, 'u': 0, 'v': 0}
+ALL PARTS PASS
+wall=13s rc=0

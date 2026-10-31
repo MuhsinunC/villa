@@ -1,0 +1,168 @@
+{
+ "tif": {
+  "base_shape": [
+   500,
+   700
+  ],
+  "base_dtype": "uint8",
+  "rot90": {
+   "rot90 ccw (np.rot90 k=1)": true,
+   "rot90 cw (np.rot90 k=-1)": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     699
+    ],
+    "cols": [
+     0,
+     499
+    ]
+   },
+   "matches": [
+    "rot90 ccw (np.rot90 k=1)"
+   ],
+   "shape": [
+    700,
+    500
+   ]
+  },
+  "rot180": {
+   "np.rot90 k=2": true,
+   "matches": [
+    "np.rot90 k=2"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip0": {
+   "np.flip axis 0 (vertical)": true,
+   "np.flip axis 1": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [
+    "np.flip axis 0 (vertical)"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip1": {
+   "np.flip axis 1 (horizontal)": true,
+   "np.flip axis 0": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [
+    "np.flip axis 1 (horizontal)"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  }
+ },
+ "zarr": {
+  "base_shape": [
+   500,
+   700
+  ],
+  "base_dtype": "uint8",
+  "rot90": {
+   "rot90 ccw (np.rot90 k=1)": true,
+   "rot90 cw (np.rot90 k=-1)": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     699
+    ],
+    "cols": [
+     0,
+     499
+    ]
+   },
+   "matches": [
+    "rot90 ccw (np.rot90 k=1)"
+   ],
+   "shape": [
+    700,
+    500
+   ]
+  },
+  "rot180": {
+   "np.rot90 k=2": true,
+   "matches": [
+    "np.rot90 k=2"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip0": {
+   "np.flip axis 0 (vertical)": true,
+   "np.flip axis 1": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [
+    "np.flip axis 0 (vertical)"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  },
+  "flip1": {
+   "np.flip axis 1 (horizontal)": true,
+   "np.flip axis 0": {
+    "n_diff": 344194,
+    "frac": 0.983411,
+    "rows": [
+     0,
+     499
+    ],
+    "cols": [
+     0,
+     699
+    ]
+   },
+   "matches": [
+    "np.flip axis 1 (horizontal)"
+   ],
+   "shape": [
+    500,
+    700
+   ]
+  }
+ }
+}

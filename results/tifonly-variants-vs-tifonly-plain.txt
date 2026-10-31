@@ -1,0 +1,12 @@
+$ /w/venv/bin/python -I /w/r4/scripts/cmp_variant.py rot90 /w/r4/out/rd/tifonly-base/o-base/tif/00.tif /w/r4/out/rd/tifonly-base/o-rot90/tif/00.tif /w/r4/out/rd/tifonly-head/o-rot90/tif/00.tif
+reference = np.rot90(plain, 1), plain /w/r4/out/rd/tifonly-base/o-base/tif/00.tif shape (500, 700), nonzero 308536 px
+/w/r4/out/rd/tifonly-base/o-rot90/tif/00.tif: DIFFERENT to np.rot90(plain, 1); 308583 of 350000 px differ, max abs diff 247; nonzero 1392 px
+/w/r4/out/rd/tifonly-head/o-rot90/tif/00.tif: DIFFERENT to np.rot90(plain, 1); 118 of 350000 px differ, max abs diff 1; nonzero 308536 px
+$ /w/venv/bin/python -I /w/r4/scripts/cmp_variant.py rot180 /w/r4/out/rd/tifonly-base/o-base/tif/00.tif /w/r4/out/rd/tifonly-base/o-rot180/tif/00.tif /w/r4/out/rd/tifonly-head/o-rot180/tif/00.tif
+reference = np.rot90(plain, 2), plain /w/r4/out/rd/tifonly-base/o-base/tif/00.tif shape (500, 700), nonzero 308536 px
+/w/r4/out/rd/tifonly-base/o-rot180/tif/00.tif: DIFFERENT to np.rot90(plain, 2); 331248 of 350000 px differ, max abs diff 237; nonzero 301902 px
+/w/r4/out/rd/tifonly-head/o-rot180/tif/00.tif: IDENTICAL to np.rot90(plain, 2); 0 of 350000 px differ, max abs diff 0; nonzero 308536 px
+$ /w/venv/bin/python -I /w/r4/scripts/cmp_variant.py flip0 /w/r4/out/rd/tifonly-base/o-base/tif/00.tif /w/r4/out/rd/tifonly-base/o-flip0/tif/00.tif /w/r4/out/rd/tifonly-head/o-flip0/tif/00.tif
+reference = np.flip(plain, 0), plain /w/r4/out/rd/tifonly-base/o-base/tif/00.tif shape (500, 700), nonzero 308536 px
+/w/r4/out/rd/tifonly-base/o-flip0/tif/00.tif: DIFFERENT to np.flip(plain, 0); 331248 of 350000 px differ, max abs diff 237; nonzero 301902 px
+/w/r4/out/rd/tifonly-head/o-flip0/tif/00.tif: IDENTICAL to np.flip(plain, 0); 0 of 350000 px differ, max abs diff 0; nonzero 308536 px

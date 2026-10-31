@@ -1,0 +1,2 @@
+/w/r4/out/cli-sabotage.log: 26 of 42 checks fail (25 of 40 subtests, 8 tif-only; whole tests failing: test_multi_part_merge); ran 5 tests in 23.552 s; FAILED (failures=26)
+/w/r4/out/cli-head-rebuilt.log: 0 of 42 checks fail (0 of 40 subtests, 0 tif-only; whole tests failing: none); ran 5 tests in 18.565 s; OK

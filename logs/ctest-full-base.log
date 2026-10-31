@@ -1,0 +1,360 @@
+$ ctest --test-dir /w/base/build --output-on-failure --parallel 4 --timeout 300 -L ^vc-core$
+Test project /w/base/build
+        Start  14: test_sampling_wait_profile
+        Start  15: test_sampling_wait_profile_enabled
+        Start  16: test_fiber_view
+        Start  17: test_fiber_constraint_geometry
+  1/164 Test  #16: test_fiber_view ...............................   Passed    0.00 sec
+        Start  18: test_omp_thread_point_collection
+  2/164 Test  #18: test_omp_thread_point_collection ..............   Passed    0.01 sec
+        Start  19: test_surface_area_units
+  3/164 Test  #19: test_surface_area_units .......................   Passed    0.01 sec
+        Start  20: test_voxel_size_metadata
+  4/164 Test  #14: test_sampling_wait_profile ....................   Passed    0.19 sec
+  5/164 Test  #15: test_sampling_wait_profile_enabled ............   Passed    0.19 sec
+        Start  21: test_read_interpolated_render
+        Start  22: test_chunked_plane_sampler_fallback
+  6/164 Test  #20: test_voxel_size_metadata ......................   Passed    0.17 sec
+        Start  23: test_volume_chunk_errors
+  7/164 Test  #17: test_fiber_constraint_geometry ................   Passed    0.39 sec
+        Start  24: test_segmentation_autosave_state
+  8/164 Test  #21: test_read_interpolated_render .................   Passed    0.20 sec
+        Start  25: test_volumetric_compositor
+  9/164 Test  #24: test_segmentation_autosave_state ..............   Passed    0.00 sec
+        Start  26: test_ink_detection_overlay
+ 10/164 Test  #22: test_chunked_plane_sampler_fallback ...........   Passed    0.25 sec
+        Start  28: test_line_annotation_context_menu
+ 11/164 Test  #25: test_volumetric_compositor ....................   Passed    0.07 sec
+        Start  29: test_scale_bar_units
+ 12/164 Test  #29: test_scale_bar_units ..........................   Passed    0.01 sec
+        Start  30: test_fiber_widget
+ 13/164 Test  #28: test_line_annotation_context_menu .............   Passed    0.03 sec
+        Start  31: test_fiber_trace_review
+ 14/164 Test  #31: test_fiber_trace_review .......................   Passed    0.00 sec
+        Start  32: test_lasagna_batch_window
+ 15/164 Test  #23: test_volume_chunk_errors ......................   Passed    0.28 sec
+        Start  34: test_spiral_config_profile_editor
+ 16/164 Test  #32: test_lasagna_batch_window .....................   Passed    0.03 sec
+        Start  35: test_line_annotation_link_validation
+ 17/164 Test  #35: test_line_annotation_link_validation ..........   Passed    0.00 sec
+        Start  36: test_line_annotation_structural_edits
+ 18/164 Test  #36: test_line_annotation_structural_edits .........   Passed    0.00 sec
+        Start  38: test_fiber_line_geometry
+ 19/164 Test  #38: test_fiber_line_geometry ......................   Passed    0.00 sec
+        Start  42: test_fiber_json
+ 20/164 Test  #42: test_fiber_json ...............................   Passed    0.00 sec
+        Start  43: test_fiber_trace_winding_bp
+ 21/164 Test  #30: test_fiber_widget .............................   Passed    0.08 sec
+        Start  44: test_lasagna_normal_alignment
+ 22/164 Test  #44: test_lasagna_normal_alignment .................   Passed    0.32 sec
+        Start  45: test_fiber_prediction_channels
+ 23/164 Test  #34: test_spiral_config_profile_editor .............   Passed    0.78 sec
+        Start  46: test_fiber_reference_replay_benchmark
+ 24/164 Test  #46: test_fiber_reference_replay_benchmark .........   Passed    0.11 sec
+        Start  47: test_fiber_replay_metric
+ 25/164 Test  #47: test_fiber_replay_metric ......................   Passed    0.17 sec
+        Start  48: test_fiber_embedding_scoring
+ 26/164 Test  #48: test_fiber_embedding_scoring ..................   Passed    0.21 sec
+        Start  49: test_fiber_width_scoring
+ 27/164 Test  #49: test_fiber_width_scoring ......................   Passed    0.38 sec
+        Start  50: test_fiber_reverse_consistency
+ 28/164 Test  #43: test_fiber_trace_winding_bp ...................   Passed    1.84 sec
+        Start  51: test_fiber_reference_replay_core
+ 29/164 Test  #50: test_fiber_reverse_consistency ................   Passed    0.34 sec
+        Start  52: test_fiber_chunk_trace
+ 30/164 Test  #51: test_fiber_reference_replay_core ..............   Passed    0.17 sec
+        Start  53: test_prediction_pooling
+ 31/164 Test  #53: test_prediction_pooling .......................   Passed    0.17 sec
+        Start  54: test_fiber_case_queue
+ 32/164 Test  #54: test_fiber_case_queue .........................   Passed    0.20 sec
+        Start  56: test_fiberlet_crop_trace
+ 33/164 Test  #45: test_fiber_prediction_channels ................   Passed    2.30 sec
+        Start  57: test_fiber_replay_visualization
+ 34/164 Test  #57: test_fiber_replay_visualization ...............   Passed    1.25 sec
+        Start  59: test_point_collections
+ 35/164 Test  #59: test_point_collections ........................   Passed    0.15 sec
+        Start  60: test_vccollection_signals
+ 36/164 Test  #60: test_vccollection_signals .....................   Passed    0.19 sec
+        Start  61: test_point_collection_widget
+ 37/164 Test  #61: test_point_collection_widget ..................   Passed    0.22 sec
+        Start  62: test_quadsurface_save_roundtrip
+ 38/164 Test  #62: test_quadsurface_save_roundtrip ...............   Passed    0.15 sec
+        Start  63: test_post_process
+ 39/164 Test  #63: test_post_process .............................   Passed    0.13 sec
+        Start  64: test_blosc1_compat
+ 40/164 Test  #64: test_blosc1_compat ............................   Passed    0.16 sec
+        Start  65: test_merge_grid_resolve
+ 41/164 Test  #65: test_merge_grid_resolve .......................   Passed    0.01 sec
+        Start  66: test_surface_meshing
+ 42/164 Test  #66: test_surface_meshing ..........................   Passed    0.12 sec
+        Start  67: test_grow_seg_store_mode
+ 43/164 Test  #26: test_ink_detection_overlay ....................   Passed    5.46 sec
+        Start  68: test_mesh_tool_outputs
+ 44/164 Test  #56: test_fiberlet_crop_trace ......................   Passed    4.24 sec
+        Start  69: test_tool_store_modes
+ 45/164 Test  #52: test_fiber_chunk_trace ........................   Passed    5.45 sec
+        Start  70: test_render_synthetic_fixture
+ 46/164 Test  #70: test_render_synthetic_fixture .................   Passed    1.01 sec
+        Start  71: test_render_synthetic_fallback_1
+ 47/164 Test  #67: test_grow_seg_store_mode ......................   Passed    3.37 sec
+        Start  72: test_render_sampler_worker_override_invalid
+ 48/164 Test  #72: test_render_sampler_worker_override_invalid ...   Passed    0.25 sec
+        Start  73: test_thread_sync_replay_native
+ 49/164 Test  #73: test_thread_sync_replay_native ................   Passed    0.01 sec
+        Start  74: test_gridstore
+ 50/164 Test  #71: test_render_synthetic_fallback_1 ..............   Passed    0.31 sec
+        Start  75: test_gridstore_branches
+ 51/164 Test  #75: test_gridstore_branches .......................   Passed    0.11 sec
+        Start  76: test_gridstore_malformed
+ 52/164 Test  #74: test_gridstore ................................   Passed    0.15 sec
+        Start  77: test_tiff
+ 53/164 Test  #76: test_gridstore_malformed ......................   Passed    0.20 sec
+        Start  78: test_normalgridtools
+ 54/164 Test  #77: test_tiff .....................................   Passed    0.28 sec
+        Start  79: test_volume_live_s3
+ 55/164 Test  #68: test_mesh_tool_outputs ........................***Failed    4.76 sec
+[MESSAGE] rows 99 cols 126 valid 11136
+[MESSAGE] sum[0] 727999.00394821167 weighted[0] 1124922.4303513004
+[MESSAGE] sum[1] 805493.7424697876 weighted[1] 1261103.0847729414
+[MESSAGE] sum[2] 455152.21673202515 weighted[2] 700345.9249434626
+[MESSAGE] rows 19 cols 22 valid 308
+[MESSAGE] sum[0] 20258.879207611084 weighted[0] 22139.880014583574
+[MESSAGE] sum[1] 22217.432468414307 weighted[1] 24354.953185001366
+[MESSAGE] sum[2] 12590.916431427002 weighted[2] 13745.605947002412
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:97: FAILED: CHECK(s.valid == expected.valid)
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:99: FAILED: CHECK(s.sum[k] == doctest::Approx(expected.sum[k]).epsilon(1e-6))
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:100: FAILED: CHECK(s.weighted[k] == doctest::Approx(expected.weighted[k]).epsilon(1e-6))
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:99: FAILED: CHECK(s.sum[k] == doctest::Approx(expected.sum[k]).epsilon(1e-6))
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:100: FAILED: CHECK(s.weighted[k] == doctest::Approx(expected.weighted[k]).epsilon(1e-6))
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:99: FAILED: CHECK(s.sum[k] == doctest::Approx(expected.sum[k]).epsilon(1e-6))
+../volume-cartographer/core/test/test_mesh_tool_outputs.cpp:100: FAILED: CHECK(s.weighted[k] == doctest::Approx(expected.weighted[k]).epsilon(1e-6))
+7 check(s) failed
+
+        Start  80: test_normal_grid_volume
+ 56/164 Test  #79: test_volume_live_s3 ...........................   Passed    1.25 sec
+        Start  81: test_normal_constraint_grid_change
+ 57/164 Test  #81: test_normal_constraint_grid_change ............   Passed    0.16 sec
+        Start  82: test_surface_patch_index
+ 58/164 Test  #82: test_surface_patch_index ......................   Passed    0.20 sec
+        Start  83: test_tiff_merge
+ 59/164 Test  #83: test_tiff_merge ...............................   Passed    0.10 sec
+        Start  84: test_http_fetch_errors
+ 60/164 Test  #84: test_http_fetch_errors ........................   Passed    2.78 sec
+        Start  85: test_global_cache_root
+ 61/164 Test  #85: test_global_cache_root ........................   Passed    0.02 sec
+        Start  86: test_sftp_fetch
+ 62/164 Test  #86: test_sftp_fetch ...............................   Passed    1.11 sec
+        Start  87: test_normal_grid_live
+ 63/164 Test  #80: test_normal_grid_volume .......................   Passed    8.38 sec
+        Start  88: test_tiff_more
+ 64/164 Test  #88: test_tiff_more ................................   Passed    0.15 sec
+        Start  89: test_geometry
+ 65/164 Test  #89: test_geometry .................................   Passed    0.13 sec
+        Start  90: test_point_index
+ 66/164 Test  #90: test_point_index ..............................   Passed    0.12 sec
+        Start  91: test_plane_surface
+ 67/164 Test  #91: test_plane_surface ............................   Passed    0.11 sec
+        Start  92: test_compositing
+ 68/164 Test  #92: test_compositing ..............................   Passed    0.12 sec
+        Start  93: test_quadsurface_basics
+ 69/164 Test  #93: test_quadsurface_basics .......................   Passed    0.12 sec
+        Start  94: test_load_json
+ 70/164 Test  #94: test_load_json ................................   Passed    0.16 sec
+        Start  97: test_remote_file_cache
+ 71/164 Test  #97: test_remote_file_cache ........................   Passed    0.20 sec
+        Start  98: test_remote_metadata_cache
+ 72/164 Test  #98: test_remote_metadata_cache ....................   Passed    0.14 sec
+        Start 103: test_render_tifxyz_logging
+ 73/164 Test #103: test_render_tifxyz_logging ....................   Passed    1.75 sec
+        Start 104: test_render_fetch_failure
+ 74/164 Test  #69: test_tool_store_modes .........................   Passed   15.19 sec
+        Start 105: test_render_band_prefetch
+ 75/164 Test #105: test_render_band_prefetch .....................   Passed    2.39 sec
+        Start 107: test_remote_url
+ 76/164 Test #107: test_remote_url ...............................   Passed    0.10 sec
+        Start 108: test_logging
+ 77/164 Test #108: test_logging ..................................   Passed    0.13 sec
+        Start 109: test_plane_surface_branches
+ 78/164 Test  #87: test_normal_grid_live .........................   Passed    9.76 sec
+        Start 110: test_quadsurface_more
+ 79/164 Test #109: test_plane_surface_branches ...................   Passed    0.13 sec
+        Start 111: test_quadsurface_smooth
+ 80/164 Test #110: test_quadsurface_more .........................   Passed    0.12 sec
+        Start 112: test_surface_cache_dependencies
+ 81/164 Test #111: test_quadsurface_smooth .......................   Passed    0.29 sec
+        Start 113: test_surface_cache_region_edit
+ 82/164 Test #112: test_surface_cache_dependencies ...............   Passed    0.55 sec
+        Start 114: test_thinning
+ 83/164 Test #114: test_thinning .................................   Passed    0.15 sec
+        Start 115: test_umbilicus
+ 84/164 Test #115: test_umbilicus ................................   Passed    0.15 sec
+        Start 116: test_colormaps
+ 85/164 Test #116: test_colormaps ................................   Passed    0.16 sec
+        Start 117: test_quadsurface_io
+ 86/164 Test #117: test_quadsurface_io ...........................   Passed    0.16 sec
+        Start 118: test_quadsurface_pointto
+ 87/164 Test #113: test_surface_cache_region_edit ................   Passed    0.94 sec
+        Start 119: test_quadsurface_snapshot
+ 88/164 Test #119: test_quadsurface_snapshot .....................   Passed    0.17 sec
+        Start 120: test_quadsurface_cache_concurrency
+ 89/164 Test #118: test_quadsurface_pointto ......................   Passed    0.18 sec
+        Start 121: test_quadsurface_save_paths
+ 90/164 Test #121: test_quadsurface_save_paths ...................   Passed    0.21 sec
+        Start 126: test_sparse_chunk_spool
+ 91/164 Test #126: test_sparse_chunk_spool .......................   Passed    0.16 sec
+        Start 128: test_quadsurface_final
+ 92/164 Test #120: test_quadsurface_cache_concurrency ............   Passed    0.46 sec
+        Start 129: test_quadsurface_components
+ 93/164 Test #128: test_quadsurface_final ........................   Passed    0.18 sec
+        Start 130: test_volume_local
+ 94/164 Test #129: test_quadsurface_components ...................   Passed    0.29 sec
+        Start 131: test_zarr_helpers
+ 95/164 Test #131: test_zarr_helpers .............................   Passed    0.00 sec
+        Start 132: test_chunked_plane_sampler
+ 96/164 Test #130: test_volume_local .............................   Passed    0.27 sec
+        Start 133: test_slicing
+ 97/164 Test #132: test_chunked_plane_sampler ....................   Passed    0.21 sec
+        Start 134: test_render_prefetch
+ 98/164 Test #133: test_slicing ..................................   Passed    0.20 sec
+        Start 135: test_volume_pkg
+ 99/164 Test #134: test_render_prefetch ..........................   Passed    0.31 sec
+        Start 136: test_vcdataset
+100/164 Test #136: test_vcdataset ................................   Passed    0.13 sec
+        Start 137: test_zarr
+101/164 Test #137: test_zarr .....................................   Passed    0.18 sec
+        Start 138: test_chunk_cache
+102/164 Test #138: test_chunk_cache ..............................   Passed    3.13 sec
+        Start 139: test_channel_read_hints
+103/164 Test #139: test_channel_read_hints .......................   Passed    0.35 sec
+        Start 140: test_chunk_load_queue
+104/164 Test #140: test_chunk_load_queue .........................   Passed    0.47 sec
+        Start 141: test_volume_extras
+105/164 Test #141: test_volume_extras ............................   Passed    0.24 sec
+        Start 142: test_vcdataset_compressors
+106/164 Test #142: test_vcdataset_compressors ....................   Passed    0.17 sec
+        Start 143: test_vcdataset_volcomp
+107/164 Test #143: test_vcdataset_volcomp ........................   Passed    1.57 sec
+        Start 144: test_zarr_shard_index_location
+108/164 Test #144: test_zarr_shard_index_location ................   Passed    1.96 sec
+        Start 145: test_volume_static_read
+109/164 Test #145: test_volume_static_read .......................   Passed    0.12 sec
+        Start 146: test_volume_pyramid
+110/164 Test #146: test_volume_pyramid ...........................   Passed    0.21 sec
+        Start 147: test_chunk_cache_persist
+111/164 Test #135: test_volume_pkg ...............................   Passed    9.98 sec
+        Start 148: test_persistent_zarr_cache_budget
+112/164 Test #148: test_persistent_zarr_cache_budget .............   Passed    0.43 sec
+        Start 149: test_zarr_chunk_fetcher
+113/164 Test #149: test_zarr_chunk_fetcher .......................   Passed    0.44 sec
+        Start 150: test_chunked_plane_sampler_more
+114/164 Test #150: test_chunked_plane_sampler_more ...............   Passed    0.14 sec
+        Start 151: test_slicing_more
+115/164 Test #151: test_slicing_more .............................   Passed    0.16 sec
+        Start 152: test_vcdataset_more
+116/164 Test #152: test_vcdataset_more ...........................   Passed    0.15 sec
+        Start 153: test_quadsurface_fixtures
+117/164 Test #153: test_quadsurface_fixtures .....................   Passed    0.19 sec
+        Start 154: test_volume_pkg_full
+118/164 Test #147: test_chunk_cache_persist ......................   Passed    3.48 sec
+        Start 155: test_load_quad_from_tifxyz
+119/164 Test #104: test_render_fetch_failure .....................   Passed   17.81 sec
+        Start 156: test_surface_patch_index_more
+120/164 Test #155: test_load_quad_from_tifxyz ....................   Passed    0.19 sec
+        Start 157: test_quadsurface_extras
+121/164 Test #156: test_surface_patch_index_more .................   Passed    0.17 sec
+        Start 158: test_quadsurface_store
+122/164 Test #157: test_quadsurface_extras .......................   Passed    0.19 sec
+        Start 159: test_volume_pkg_more
+123/164 Test #154: test_volume_pkg_full ..........................   Passed    4.84 sec
+        Start 160: test_seed_anchor
+124/164 Test #160: test_seed_anchor ..............................   Passed    0.02 sec
+        Start 161: agent_bridge_contract
+125/164 Test #161: agent_bridge_contract .........................   Passed    0.01 sec
+        Start 162: volume_path_labels
+126/164 Test #162: volume_path_labels ............................   Passed    0.03 sec
+        Start 163: surface_render_policy
+127/164 Test #163: surface_render_policy .........................   Passed    0.01 sec
+        Start 164: catalog_project_dialog
+128/164 Test #159: test_volume_pkg_more ..........................   Passed    4.18 sec
+        Start 165: spiral_input_draft
+129/164 Test #165: spiral_input_draft ............................   Passed    0.01 sec
+        Start 166: line_annotation_coordinate_scale
+130/164 Test #166: line_annotation_coordinate_scale ..............   Passed    0.15 sec
+        Start 167: surface_rotation_transform
+131/164 Test #167: surface_rotation_transform ....................   Passed    0.01 sec
+        Start 168: vc_settings
+132/164 Test #158: test_quadsurface_store ........................   Passed    4.58 sec
+        Start 169: unified_browser_dialog
+133/164 Test #164: catalog_project_dialog ........................   Passed    0.96 sec
+        Start 170: spiral_reload_comparison
+134/164 Test #170: spiral_reload_comparison ......................   Passed    0.01 sec
+        Start 171: spiral_artifact_pins
+135/164 Test #171: spiral_artifact_pins ..........................   Passed    0.01 sec
+        Start 172: spiral_point_placement_mode
+136/164 Test #172: spiral_point_placement_mode ...................   Passed    0.05 sec
+        Start 173: spiral_point_collection_edit
+137/164 Test #173: spiral_point_collection_edit ..................   Passed    0.04 sec
+        Start 174: spiral_preview_provenance
+138/164 Test #174: spiral_preview_provenance .....................   Passed    0.01 sec
+        Start 175: download_queue_stats
+139/164 Test #175: download_queue_stats ..........................   Passed    0.01 sec
+        Start 176: download_queue_debug
+140/164 Test #176: download_queue_debug ..........................   Passed    0.06 sec
+        Start 177: seeding_batch_tracker
+141/164 Test #177: seeding_batch_tracker .........................   Passed    0.01 sec
+        Start 178: fiber_save_batch_tracker
+142/164 Test #178: fiber_save_batch_tracker ......................   Passed    0.01 sec
+        Start 179: fiber_network_layout
+143/164 Test #169: unified_browser_dialog ........................   Passed    0.57 sec
+        Start 180: command_line_tool_runner
+144/164 Test #179: fiber_network_layout ..........................   Passed    0.06 sec
+        Start 181: open_data_volume_orientation
+145/164 Test #181: open_data_volume_orientation ..................   Passed    0.13 sec
+        Start 182: fiber_map_staleness
+146/164 Test #182: fiber_map_staleness ...........................   Passed    0.02 sec
+        Start 183: fiber_winding_solver
+147/164 Test #168: vc_settings ...................................   Passed    0.88 sec
+        Start 184: fiber_global_layout
+148/164 Test #183: fiber_winding_solver ..........................   Passed    0.09 sec
+        Start 185: fiber_map_auto_link
+149/164 Test #185: fiber_map_auto_link ...........................   Passed    0.06 sec
+        Start 186: fiber_map_gap_field
+150/164 Test #186: fiber_map_gap_field ...........................   Passed    0.22 sec
+        Start 187: fiber_map_rebuild_queue
+151/164 Test #187: fiber_map_rebuild_queue .......................   Passed    0.01 sec
+        Start 188: fiber_map_ruler_math
+152/164 Test #188: fiber_map_ruler_math ..........................   Passed    0.01 sec
+        Start 189: fiber_length_display
+153/164 Test #189: fiber_length_display ..........................   Passed    0.01 sec
+        Start 190: fiber_map_kollesis
+154/164 Test #190: fiber_map_kollesis ............................   Passed    0.01 sec
+        Start 191: line_annotation_fiber_deletion
+155/164 Test #191: line_annotation_fiber_deletion ................   Passed    0.01 sec
+        Start 192: line_annotation_optimization_queue
+156/164 Test #192: line_annotation_optimization_queue ............   Passed    0.01 sec
+        Start 193: spiral_input_workflow
+157/164 Test #193: spiral_input_workflow .........................   Passed    1.48 sec
+        Start 194: spiral_brush_patch
+158/164 Test #194: spiral_brush_patch ............................   Passed    0.25 sec
+        Start 195: object_store_vc3d_controller
+159/164 Test #184: fiber_global_layout ...........................   Passed    2.07 sec
+        Start 196: surface_panel_store
+160/164 Test #180: command_line_tool_runner ......................   Passed    2.66 sec
+        Start 197: surface_catalog
+161/164 Test #197: surface_catalog ...............................   Passed    1.69 sec
+162/164 Test #196: surface_panel_store ...........................   Passed    2.04 sec
+163/164 Test #195: object_store_vc3d_controller ..................   Passed    6.03 sec
+164/164 Test  #78: test_normalgridtools ..........................   Passed   93.46 sec
+
+99% tests passed, 1 tests failed out of 164
+
+Label Time Summary:
+network    =  11.01 sec*proc (2 tests)
+vc-core    = 255.39 sec*proc (164 tests)
+
+Total Test time (real) = 103.02 sec
+
+The following tests FAILED:
+	 68 - test_mesh_tool_outputs (Failed)                   vc-core
+Errors while running CTest
+rc=8

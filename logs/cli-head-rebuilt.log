@@ -1,0 +1,11 @@
+$ PYTHONPATH=/w/head/volume-cartographer/core/test python3 /w/head/volume-cartographer/core/test/test_render_rotate_flip.py /w/head/build/bin/vc_render_tifxyz
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 18.565s
+
+OK
+
+real	0m15.911s
+user	0m30.778s
+sys	0m4.419s
+rc=0

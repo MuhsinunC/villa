@@ -1,0 +1,52 @@
+$ ctest --test-dir /w/head/build --output-on-failure --parallel 4 --timeout 300 -R test_rotate_flip_rect|test_render_rotate_flip|tif|tiff|render|zarr
+Test project /w/head/build
+      Start  21: test_read_interpolated_render
+      Start  70: test_render_synthetic_fixture
+      Start  71: test_render_synthetic_fallback_1
+      Start  72: test_render_sampler_worker_override_invalid
+ 1/21 Test  #21: test_read_interpolated_render .................   Passed    0.19 sec
+      Start  77: test_tiff
+ 2/21 Test  #72: test_render_sampler_worker_override_invalid ...   Passed    0.19 sec
+      Start  83: test_tiff_merge
+ 3/21 Test  #71: test_render_synthetic_fallback_1 ..............   Passed    0.39 sec
+      Start  88: test_tiff_more
+ 4/21 Test  #83: test_tiff_merge ...............................   Passed    0.24 sec
+      Start 103: test_render_tifxyz_logging
+ 5/21 Test  #77: test_tiff .....................................   Passed    0.27 sec
+      Start 104: test_render_fetch_failure
+ 6/21 Test  #88: test_tiff_more ................................   Passed    0.25 sec
+      Start 105: test_render_band_prefetch
+ 7/21 Test  #70: test_render_synthetic_fixture .................   Passed    1.15 sec
+      Start 106: test_render_rotate_flip
+ 8/21 Test #103: test_render_tifxyz_logging ....................   Passed    2.34 sec
+      Start 132: test_zarr_helpers
+ 9/21 Test #132: test_zarr_helpers .............................   Passed    0.00 sec
+      Start 133: test_rotate_flip_rect
+10/21 Test #133: test_rotate_flip_rect .........................   Passed    0.32 sec
+      Start 136: test_render_prefetch
+11/21 Test #105: test_render_band_prefetch .....................   Passed    2.66 sec
+      Start 139: test_zarr
+12/21 Test #136: test_render_prefetch ..........................   Passed    0.25 sec
+      Start 146: test_zarr_shard_index_location
+13/21 Test #139: test_zarr .....................................   Passed    0.19 sec
+      Start 150: test_persistent_zarr_cache_budget
+14/21 Test #150: test_persistent_zarr_cache_budget .............   Passed    0.42 sec
+      Start 151: test_zarr_chunk_fetcher
+15/21 Test #151: test_zarr_chunk_fetcher .......................   Passed    0.53 sec
+      Start 157: test_load_quad_from_tifxyz
+16/21 Test #157: test_load_quad_from_tifxyz ....................   Passed    0.14 sec
+      Start 165: surface_render_policy
+17/21 Test #165: surface_render_policy .........................   Passed    0.05 sec
+      Start 173: spiral_artifact_pins
+18/21 Test #173: spiral_artifact_pins ..........................   Passed    0.01 sec
+19/21 Test #146: test_zarr_shard_index_location ................   Passed    2.11 sec
+20/21 Test #106: test_render_rotate_flip .......................   Passed   14.60 sec
+21/21 Test #104: test_render_fetch_failure .....................   Passed   16.43 sec
+
+100% tests passed, 0 tests failed out of 21
+
+Label Time Summary:
+vc-core    =  42.74 sec*proc (21 tests)
+
+Total Test time (real) =  16.91 sec
+rc=0

@@ -1,0 +1,600 @@
+$ PYTHONPATH=/w/head/volume-cartographer/core/test python3 /w/head/volume-cartographer/core/test/test_render_rotate_flip.py /w/bin/base/vc_render_tifxyz
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF.F
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=0, flip=0, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r0f0q1c0')): 51671 of 61004 pixels differ, first at x=1 y=0: 160 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=0, flip=0, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r0f0q1c0')): 51671 of 61004 pixels differ, first at x=1 y=0: 160 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=0, flip=1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 322, in check
+    self.assert_image(plane, orient(image, angle, flip), ("zarr", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('zarr', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r0f1q1c0')): 50295 of 61004 pixels differ, first at x=46 y=1: 0 != 156
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=0, flip=2, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r0f2q1c0')): 51671 of 61004 pixels differ, first at x=4 y=0: 96 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=0, flip=2, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r0f2q1c0')): 51671 of 61004 pixels differ, first at x=4 y=0: 96 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=-1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r90f-1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=-1, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r90f-1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=0, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r90f0q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=0, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r90f0q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r90f1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=1, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r90f1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=2, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r90f2q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=90, flip=2, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r90f2q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=180, flip=-1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r180f-1q1c0')): 51671 of 61004 pixels differ, first at x=4 y=0: 96 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=180, flip=-1, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r180f-1q1c0')): 51671 of 61004 pixels differ, first at x=4 y=0: 96 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=180, flip=0, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 322, in check
+    self.assert_image(plane, orient(image, angle, flip), ("zarr", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('zarr', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r180f0q1c0')): 50295 of 61004 pixels differ, first at x=46 y=1: 0 != 156
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=180, flip=1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r180f1q1c0')): 51671 of 61004 pixels differ, first at x=1 y=0: 160 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=180, flip=1, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r180f1q1c0')): 51671 of 61004 pixels differ, first at x=1 y=0: 160 != 0
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=-1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r270f-1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=-1, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r270f-1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=0, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r270f0q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=0, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r270f0q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=1, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r270f1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=1, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r270f1q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=2, quick=True, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r270f2q1c0'))
+
+======================================================================
+FAIL: test_all_orientations_quick_tif (__main__.RotateFlipTests.test_all_orientations_quick_tif) (angle=270, flip=2, quick=True, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r270f2q1c0'))
+
+======================================================================
+FAIL: test_crop (__main__.RotateFlipTests.test_crop) (angle=270, flip=-1, quick=False, crop=True, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16950 != 31650 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r270f-1q0c8'))
+
+======================================================================
+FAIL: test_crop (__main__.RotateFlipTests.test_crop) (angle=270, flip=-1, quick=False, crop=True, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16950 != 31650 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r270f-1q0c8'))
+
+======================================================================
+FAIL: test_crop (__main__.RotateFlipTests.test_crop) (angle=180, flip=-1, quick=False, crop=True, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r180f-1q0c8')): 31537 of 31650 pixels differ, first at x=0 y=0: 109 != 28
+
+======================================================================
+FAIL: test_crop (__main__.RotateFlipTests.test_crop) (angle=180, flip=-1, quick=False, crop=True, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r180f-1q0c8')): 31537 of 31650 pixels differ, first at x=0 y=0: 109 != 28
+
+======================================================================
+FAIL: test_exact_without_quick_tif (__main__.RotateFlipTests.test_exact_without_quick_tif) (angle=90, flip=-1, quick=False, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r90f-1q0c0'))
+
+======================================================================
+FAIL: test_exact_without_quick_tif (__main__.RotateFlipTests.test_exact_without_quick_tif) (angle=90, flip=-1, quick=False, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 307, in assert_image
+    self.assertEqual(len(got[2]), got[0] * got[1], label)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 32118 != 61004 : ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r90f-1q0c0'))
+
+======================================================================
+FAIL: test_exact_without_quick_tif (__main__.RotateFlipTests.test_exact_without_quick_tif) (angle=180, flip=-1, quick=False, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r180f-1q0c0')): 55041 of 61004 pixels differ, first at x=4 y=0: 97 != 0
+
+======================================================================
+FAIL: test_exact_without_quick_tif (__main__.RotateFlipTests.test_exact_without_quick_tif) (angle=180, flip=-1, quick=False, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r180f-1q0c0')): 55041 of 61004 pixels differ, first at x=4 y=0: 97 != 0
+
+======================================================================
+FAIL: test_exact_without_quick_tif (__main__.RotateFlipTests.test_exact_without_quick_tif) (angle=0, flip=0, quick=False, crop=False, path='tile')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 329, in check_variant
+    self.check(output, self.reference(True, quick, crop), angle, flip)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/tile-r0f0q0c0')): 55041 of 61004 pixels differ, first at x=1 y=0: 173 != 0
+
+======================================================================
+FAIL: test_exact_without_quick_tif (__main__.RotateFlipTests.test_exact_without_quick_tif) (angle=0, flip=0, quick=False, crop=False, path='tif-only')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 333, in check_variant
+    self.check(output, self.reference(angle in (90, 270), quick, crop), angle, flip, zarr=False)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/band-r0f0q0c0')): 55041 of 61004 pixels differ, first at x=1 y=0: 173 != 0
+
+======================================================================
+FAIL: test_multi_part_merge (__main__.RotateFlipTests.test_multi_part_merge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 379, in test_multi_part_merge
+    self.check(output, self.reference(True, True), 90, -1)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 317, in check
+    self.assert_image(got, orient(image, angle, flip), ("tif", z, output))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/w/head/volume-cartographer/core/test/test_render_rotate_flip.py", line 312, in assert_image
+    self.fail(f"{label}: {len(diff)} of {len(got[2])} pixels differ, first at x={x} y={y}: "
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"{got[2][diff[0]]} != {expected[2][diff[0]]}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('tif', 0, PosixPath('/w/tmp/vc render rotate flip c4jobhhy/parts')): 58576 of 61004 pixels differ, first at x=1 y=0: 112 != 0
+
+----------------------------------------------------------------------
+Ran 5 tests in 18.688s
+
+FAILED (failures=37)
+
+real	0m16.029s
+user	0m27.229s
+sys	0m4.804s
+rc=1

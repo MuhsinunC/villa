@@ -1,0 +1,44 @@
+{
+ "base": "/w/r4/out/rd/fulltile-base/o-base",
+ "head": "/w/r4/out/rd/fulltile-head/o-base",
+ "tif": {
+  "files": 1,
+  "equal": true,
+  "only_base": [],
+  "only_head": [],
+  "differ": []
+ },
+ "out.zarr": {
+  "files": 101,
+  "equal": true,
+  "only_base": [],
+  "only_head": [],
+  "differ": [],
+  "levels": {
+   "0": {
+    "files": 63,
+    "equal": true
+   },
+   "1": {
+    "files": 22,
+    "equal": true
+   },
+   "2": {
+    "files": 7,
+    "equal": true
+   },
+   "3": {
+    "files": 3,
+    "equal": true
+   },
+   "4": {
+    "files": 2,
+    "equal": true
+   },
+   "5": {
+    "files": 2,
+    "equal": true
+   }
+  }
+ }
+}

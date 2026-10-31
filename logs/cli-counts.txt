@@ -1,0 +1,2 @@
+/w/r4/out/cli-head.log: 0 of 42 checks fail (0 of 40 subtests, 0 tif-only; whole tests failing: none); ran 5 tests in 17.880 s; OK
+/w/r4/out/cli-base.log: 37 of 42 checks fail (36 of 40 subtests, 17 tif-only; whole tests failing: test_multi_part_merge); ran 5 tests in 18.688 s; FAILED (failures=37)
